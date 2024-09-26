@@ -1,0 +1,370 @@
+:root {
+    --background : #fff;
+    --heading-color1 : #fff;
+    --heading-color2 : #fff;
+    --text-color : grey;
+    --text-color1 : #fff;
+}
+
+body {
+    background: var(--background);
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bars {
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+section {
+    min-height: 350px;
+    min-width: 100%;
+}
+
+/* ------------ Home section ------------ */
+
+#home {
+    background: url(assets/meal.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: skew(0deg, -3deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#desc {
+    color: var(--heading-color1);
+    font-size: 2.0rem;
+    text-shadow: 0 0 2px lightgrey;
+    transform: skew(0deg, 3deg);
+}
+
+/* ------------ About section ------------- */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutTopContainer {
+    min-height: 150px;
+    min-width: 150px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: -3rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background);
+}
+
+.fa-ice-cream {
+    font-size: 2.5rem;
+}
+
+#aboutHeading{
+    font-weight: 700;
+}
+
+#aboutBottomContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.box{
+    max-width: 250px;
+    max-height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.number {
+    color: var(--heading-color2);
+    margin: 0.5rem  0;
+}
+
+.heading {
+    margin: 0.5rem  0;
+}
+
+.details  {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.btn {
+    border: 2px solid #000;
+    width: fit-content;
+    margin-top: 1rem;
+    padding: 0.3rem 1rem;
+    background-color: var(--background);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    transition: transform 0.5s;
+}
+
+/* ----------- Catering ------------- */
+
+#catering {
+    background: url(assets/fries.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: skew(0deg, -3deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+#catering_heading {
+    color: var(--heading-color1) ;
+    background: transparent;
+    transform: skew(0deg, 3deg);
+    margin: 0;
+}
+
+#catering_text {
+    color: var(--text-color1);
+    background: transparent;
+    transform: skew(0deg, 2deg);
+    text-shadow: 0 0px 5px grey;
+    font-weight: 700;
+}
+
+#cateringContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    width: 40%;
+    transform: skew(0deg, 3deg);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.cateringBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: none;
+}
+
+.catering-item {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.cateringItemText  {
+    color: var(--text-color1);
+}
+
+#cateringImg1 {
+    background:url(assets/salad2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#cateringImg2 {
+    background:url(assets/seaFood.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#cateringImg3 {
+    background:url(assets/sweets.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#cateringImg4 {
+    background:url(assets/pizza2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*---------------- Menu ----------------*/
+#menu {
+    transform: skew(0deg, -3deg);
+}
+
+.fa-book-open {
+    font-size: 2.5rem;
+}
+
+#menuHeading {
+    font-weight: 700;
+}
+
+#menuTopContainer {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: auto;
+    transform: skew(0deg, 3deg);
+    position: relative;
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background);
+}
+
+#menuBottomContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    transform: skew(0deg, 3deg);
+}
+
+.menuBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 1rem;
+}
+
+#menuBox1 {
+    height: 180px;
+    width: 100%;
+    background:url(assets/pizza.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#menuBox2 {
+    height: 180px;
+    width: 100%;
+    background:url(assets/salad.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#menuBox3 {
+    height: 180px;
+    width: 100%;
+    background:url(assets/desserts.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* --------------- services ---------------- */
+
+#services {
+    background: url(assets/fruits.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 12rem;
+    transform: skew(0deg, -3deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#servicesHeading {
+    background:transparent;
+    color: var(--heading-color1);
+    font-size: 2.0rem;
+    text-shadow: 0 0 2px lightgrey;
+    transform: skew(0deg, 3deg);
+}
+
+/* ------------- Team Section --------------- */
+
+#team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#teamTopContainer {
+    height: 150px;
+    width: 150px;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: -3rem;
+    z-index: 1;
+}
+
+#teamHeading {
+    font-weight: 700;
+}
+
+#teamText  {
+
+}
+
+#teamBottomContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+}
+
+.team-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#teamImg1  {
+    
+}
+
+#teamImg2  {
+
+}
+
+#teamImg3  {
+
+}
+
+#teamImg4  {
+
+}
+
+.team-name {
+    margin: 0;
+}
+
+.team-profession {
+    color: var(--text-color);
+}
