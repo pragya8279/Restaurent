@@ -5,11 +5,13 @@
     --text-color : grey;
     --text-color1 : #fff;
     --input-background : whitesmoke;
+    --footer-bg : #474747;
 }
 
 body {
     background: var(--background);
-    font-family: "Fredoka", sans-serif;
+    /* font-family: "Fredoka", sans-serif; */
+    font-family: verdana;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
@@ -493,7 +495,7 @@ section {
 
 /*------------------- footer ------------------*/
 #footer {
-    background-color:#474747 ;
+    background-color: var(--footer-bg);
     color: var(--text-color1);
     padding: 2rem;
 }
